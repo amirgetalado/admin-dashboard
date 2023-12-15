@@ -1,0 +1,142 @@
+:root{
+    --main-clr:#041421;
+    --secondary-clr:#042630;
+    --third-clr:#4c7273;
+    --fourth-clr:#86b9b0;
+    --fifth-clr:#d0d6d6;
+
+    --font-1: white; 
+    --font-2: rgb(59, 160, 255) ;
+    --font-3: black;
+    --font-4: rgb(139, 138, 138);
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: minmax(200px, 20%) repeat(3,1fr);
+    grid-template-areas:
+        "aside header header header"
+        "aside header header header"
+        "aside main main main"
+        "aside main main main"
+        "aside main main main"
+        "aside main main main"
+        "aside main main main"
+        "aside main main main"
+        "aside main main main"
+        "aside footer footer footer";
+    min-height: 100vh;
+}
+header,
+main,
+footer{
+    border:1px solid black;
+
+}
+
+/*aside here*/
+aside{
+    border: 1px solid black;
+    background: var(--secondary-clr);
+    grid-area: aside;
+}
+
+aside > div > a:visited,
+aside > ul > li > a:visited,
+aside > div > a,
+aside > ul > li > a{
+    color:var(--font-1);
+}
+aside > div > a:hover,
+aside > ul > li > a:hover{
+    color:var(--font-2);
+    border-bottom: 1.5px solid var(--font-2);
+}
+
+h1{
+    display:inline;
+}
+
+.main-logo{
+    height:30px;
+    width: 30px;
+}
+
+.aside-logo{
+    height: 20px;
+    width: 20px;
+}
+
+
+/*header here*/
+header{
+    padding-top: 10px;
+    grid-area: header;
+    background: var(--font-1);
+}
+
+label > img,
+.notif > a:nth-child(1) img{
+    width: 25px;
+    height: 25px;
+}
+.notif > a:nth-child(2) img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+input[type=search],
+input[type=search]:focus{
+    background: var(--fourth-clr);
+    border-radius: 10px;
+    outline:none;
+    border:none;
+}
+
+input{
+    width: 600px;
+    height: 30px;
+    padding: 10px;
+}
+
+.header-upper{
+    display: flex;
+    align-items: center;
+}
+form{
+    flex:2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 30px;
+}
+.notif{
+    flex:1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/*main here*/
+main{
+    grid-area: main;
+    background: var(--fourth-clr);
+}
+
+
+/*footer here*/
+
+footer{
+    grid-area: footer;
+    background: var(--font-1);
+}
