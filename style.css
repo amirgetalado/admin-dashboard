@@ -11,6 +11,10 @@
     --font-4: rgb(139, 138, 138);
 }
 
+/* * {
+    box-sizing: border-box;
+} */
+
 ul{
     list-style-type: none;
     padding: 0;
@@ -24,8 +28,8 @@ a{
 .container{
     display:grid;
     grid-template-columns: minmax(200px, 20%) repeat(3,1fr);
+    grid-template-rows: minmax(182px, 15%) repeat(7,1fr) minmax(50px, 5%);
     grid-template-areas:
-        "aside header header header"
         "aside header header header"
         "aside main main main"
         "aside main main main"
@@ -37,8 +41,8 @@ a{
         "aside footer footer footer";
     min-height: 100vh;
 }
-header,
-main,
+
+
 footer{
     border:1px solid black;
 
@@ -59,8 +63,8 @@ aside > ul > li > a{
 }
 aside > div > a:hover,
 aside > ul > li > a:hover{
-    color:var(--font-2);
-    border-bottom: 1.5px solid var(--font-2);
+    color:var(--fourth-clr);
+    border-bottom: 1.5px solid var(--main-clr);
 }
 
 h1{
@@ -83,6 +87,18 @@ header{
     padding-top: 10px;
     grid-area: header;
     background: var(--font-1);
+    box-shadow: 0px 10px 10px var(--fourth-clr);
+    /* position: relative;
+    z-index: 1; */
+}
+
+.notif > a,
+.notif > a:visited{
+    color: var(--font-3);
+}
+
+.upper-name{
+    font-weight: bolder;
 }
 
 label > img,
@@ -103,10 +119,16 @@ input[type=search]:focus{
     border:none;
 }
 
+input[type=search]:focus,
+input[type=search]:hover{
+    box-shadow: 0px 5px 10px var(--third-clr);
+}
+
 input{
-    width: 600px;
+    width: 100%;
     height: 30px;
     padding: 10px;
+    margin-right: 40px;
 }
 
 .header-upper{
@@ -127,10 +149,65 @@ form{
     gap: 15px;
 }
 
+.header-lower,
+.lower-left,
+.lower-right,
+.nav{
+    display:flex;
+}
+.header-lower{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.lower-left{
+    flex:2;
+    align-items: center;
+    gap: 30px;
+    font-weight: bolder;
+}
+.lower-right{
+    flex:1;
+    align-items: center;
+}
+.lower-left > div > img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nav{
+    gap: 30px;
+    margin-right: 50px;
+}
+
+
+.nav > a > li {
+    background: var(--main-clr);
+    width: 80px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+.nav > a,
+.nav > a:visited{
+    color: var(--font-1);
+    border-radius: 12px;
+}
+
+.nav > a:hover{
+    box-shadow: 0px 5px 10px var(--third-clr);
+}
+
 /*main here*/
 main{
     grid-area: main;
     background: var(--fourth-clr);
+    /* position:relative;
+    z-index: 0; */
+
 }
 
 
