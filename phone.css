@@ -131,10 +131,12 @@
 
     .main-right-card{
         width: 300px;
+        margin: 0 auto;
     }
 
     .card{
         width: 325px;
+        margin: 0 auto;
     }
 
     /*footer here*/
