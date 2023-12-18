@@ -49,6 +49,7 @@
     .header-upper{
         display:flex;
         justify-items: center;
+        gap: 0;
     }
     .header-lower{
         display:flex;
@@ -58,13 +59,41 @@
     form{
         padding-left: 50px;
     }
+
+    input{
+        margin-right: 0;
+    }
     .notif{
         display:flex;
         justify-content: flex-start;
+        align-items: center;
+        padding-left: 5px;
     }
     .upper-name,
     .notif > a:nth-child(2)>img{
         display:none;
+    }
+
+    .lower-left{
+        gap: 15px;
+        line-height: 10px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .lower-left > div > img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .nav > a > li {
+        width: 50px;
+        padding: 8px 15px;   
+    }
+
+    .lower-right{
+        margin: 0 auto;
     }
 
     /*main here*/
