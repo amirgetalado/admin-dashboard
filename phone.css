@@ -108,6 +108,8 @@
         "up"
         "down";
         margin: 0 auto;
+        justify-items: center;
+        align-items: center;
     }
 
     .main-left{
