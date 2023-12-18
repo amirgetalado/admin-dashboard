@@ -118,10 +118,20 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+        padding-right:10px;
+        display:grid;
     }
 
     .card-container-bottom > div{
         margin-left: 30px;
+    }
+
+    .main-right-card{
+        width: 300px;
+    }
+
+    .card{
+        width: 325px;
     }
 
     /*footer here*/
