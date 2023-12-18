@@ -329,3 +329,8 @@ hr{
 .main-right-card{
     box-shadow: 5px 5px 10px var(--main-clr);
 }
+
+/*footer*/
+footer{
+    display:hidden;
+}
