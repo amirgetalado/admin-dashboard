@@ -107,7 +107,6 @@
         "up"
         "up"
         "down";
-        margin: 0 auto;
         justify-items: center;
         align-items: center;
     }
@@ -115,7 +114,6 @@
     .main-left{
         grid-area: up;
         padding-right: 10px;
-        margin: 0 auto;
     }
     .main-right{
         grid-area: down;
@@ -124,7 +122,6 @@
         grid-template-rows: 1fr 1fr;
         padding-right:10px;
         display:grid;
-        margin: 0 auto;
     }
 
     .card-container-bottom > div{
@@ -133,12 +130,10 @@
 
     .main-right-card{
         width: 300px;
-        margin: 0 auto;
     }
 
     .card{
         width: 325px;
-        margin: 0 auto;
     }
 
     /*footer here*/
