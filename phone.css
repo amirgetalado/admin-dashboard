@@ -107,6 +107,7 @@
         "up"
         "up"
         "down";
+        justify-items: center;
     }
 
     .main-left{
