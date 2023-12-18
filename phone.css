@@ -120,6 +120,10 @@
         grid-template-rows: 1fr 1fr;
     }
 
+    .card-container-bottom > div{
+        margin-left: 30px;
+    }
+
     /*footer here*/
     footer{
         display:flex;
