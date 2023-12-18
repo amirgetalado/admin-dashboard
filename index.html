@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="./images/dashboard.png" />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="phone.css" media="(min-width:600px)" />
+    <link rel="stylesheet" href="phone.css" media="(max-width:600px)" />
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -20,9 +20,9 @@
                 <a href="index.html"><h1>Dashboard</h1></a>
             </div>
 
-           <ul>
+           <ul class="first-links">
 
-                <li class="first-links">
+                <li>
                     <a href="index.html"><img class="aside-logo" src="./images/home.png" alt="" /></a>
                     <a href="index.html">Home</a>
                 </li>
@@ -93,7 +93,7 @@
 
                     <div>
                         <p>Hi there,</p>
-                        <h3>Amir Getalado (@Decimo)</h3>
+                        <h2>Amir Getalado (@Decimo)</h2>
                     </div>
                 </div>
 
@@ -107,9 +107,122 @@
             </div>
         </header>
 
-        <main>3</main>
+        <main>
 
-        <footer>4</footer>
+            <div class="main-left">
+                <h2>Your Projects</h2>
+
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="action">
+                            <a href="index.html"><img src="./images/save.png" alt=""></a>
+                            <a href="index.html"><img src="./images/delete.png" alt=""></a>
+                            <a href="index.html"><img src="./images/share.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Less Cool Project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="action">
+                            <a href="index.html"><img src="./images/save.png" alt=""></a>
+                            <a href="index.html"><img src="./images/delete.png" alt=""></a>
+                            <a href="index.html"><img src="./images/share.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Impossible App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="action">
+                            <a href="index.html"><img src="./images/save.png" alt=""></a>
+                            <a href="index.html"><img src="./images/delete.png" alt=""></a>
+                            <a href="index.html"><img src="./images/share.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Easy Peasy App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="action">
+                            <a href="index.html"><img src="./images/save.png" alt=""></a>
+                            <a href="index.html"><img src="./images/delete.png" alt=""></a>
+                            <a href="index.html"><img src="./images/share.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Ad Blocker</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="action">
+                            <a href="index.html"><img src="./images/save.png" alt=""></a>
+                            <a href="index.html"><img src="./images/delete.png" alt=""></a>
+                            <a href="index.html"><img src="./images/share.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Money Maker</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="action">
+                            <a href="index.html"><img src="./images/save.png" alt=""></a>
+                            <a href="index.html"><img src="./images/delete.png" alt=""></a>
+                            <a href="index.html"><img src="./images/share.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-right">
+                <div class="main-right-top">
+                    <h2>Announcements</h2>
+                    <div class="main-right-card">
+                        <div>
+                            <h3>Site Maintenance</h3>
+                            <p>Purus non enim praesent elementum facilisis leo vel fringilla est...</p>
+                            <hr/>
+                        </div>
+                        <div>
+                            <h3>Community Share Day</h3>
+                            <p> Quisque id diam vel quam elementum pulvinar etiam...</p>
+                            <hr/>
+                        </div>
+                        <div>
+                            <h3>Updated Privacy Policy</h3>
+                            <p> Id semper risus in hendrerit gravida rutrum quisque...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-right-bottom">
+                    <h2>Trending</h2>
+                    <div class="main-right-card card-container-bottom">
+                        <div>
+                            <img src="./images/panda.png" alt="">
+                            <div class="trending-names">
+                                <span>@pandaPo</span><br/>World Famous Panda
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/lion.png" alt="">
+                            <div class="trending-names">
+                                <span>@lionEmperor</span><br/>Tyrant Emperor
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/chick.png" alt="">
+                            <div class="trending-names">
+                                <span>@chickSy</span><br/>Cutie Chick
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/fish.png" alt="">
+                            <div class="trending-names">
+                                <span>@fishDa</span><br/>Honorable Fish
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
 
     </div>
     
